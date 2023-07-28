@@ -713,7 +713,7 @@ export interface SwiperOptions {
    *
    * @default 'window'
    *
-   * @note Currently in beta and not supported by Swiper React and Vue components
+   * @note Currently in beta and not supported by Swiper React components
    */
   breakpointsBase?: string;
 
@@ -752,7 +752,7 @@ export interface SwiperOptions {
    *
    * @note By changing classes you will also need to change Swiper's CSS to reflect changed classes
    *
-   * @note Not supported in Swiper React/Vue components
+   * @note Not supported in Swiper React components
    */
   slideClass?: string;
 
@@ -763,7 +763,7 @@ export interface SwiperOptions {
    *
    * @note By changing classes you will also need to change Swiper's CSS to reflect changed classes
    *
-   * @note Not supported in Swiper React/Vue components
+   * @note Not supported in Swiper React components
    */
   slideActiveClass?: string;
 
@@ -774,7 +774,7 @@ export interface SwiperOptions {
    *
    * @note By changing classes you will also need to change Swiper's CSS to reflect changed classes
    *
-   * @note Not supported in Swiper React/Vue
+   * @note Not supported in Swiper React
    */
   slideVisibleClass?: string;
 
@@ -785,7 +785,7 @@ export interface SwiperOptions {
    *
    * @note By changing classes you will also need to change Swiper's CSS to reflect changed classes
    *
-   * @note Not supported in Swiper React/Vue
+   * @note Not supported in Swiper React
    */
   slideNextClass?: string;
 
@@ -796,7 +796,7 @@ export interface SwiperOptions {
    *
    * @note By changing classes you will also need to change Swiper's CSS to reflect changed classes
    *
-   * @note Not supported in Swiper React/Vue
+   * @note Not supported in Swiper React
    */
   slidePrevClass?: string;
 
@@ -807,7 +807,7 @@ export interface SwiperOptions {
    *
    * @note By changing classes you will also need to change Swiper's CSS to reflect changed classes
    *
-   * @note Not supported in Swiper React/Vue
+   * @note Not supported in Swiper React
    *
    */
   wrapperClass?: string;

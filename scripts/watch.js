@@ -7,7 +7,6 @@ import buildJsBundle from './build-js-bundle.js';
 import buildTypes from './build-types.js';
 import buildStyles from './build-styles.js';
 import buildReact from './build-react.js';
-import buildVue from './build-vue.js';
 import buildElement from './build-element.js';
 
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
@@ -33,11 +32,6 @@ const watchFunction = async (fileName) => {
   if (fileName.includes('element')) {
     console.log('Building Element');
     buildElement('build');
-    return;
-  }
-  if (fileName.includes('vue')) {
-    console.log('Building Vue');
-    buildVue('build');
     return;
   }
 

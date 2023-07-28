@@ -11,10 +11,8 @@ const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 export default async function buildTypes() {
   elapsed.start('types');
   let coreEventsReact = '';
-  let coreEventsVue = '';
   let coreEventsElement = '';
   let modulesEventsReact = '';
-  let modulesEventsVue = '';
   let modulesEventsElement = '';
 
   const replaceInstances = (content) => {
@@ -55,11 +53,6 @@ export default async function buildTypes() {
         return ` on${name[0].toUpperCase()}${name.substr(1)}?: (`;
       }),
     );
-    coreEventsVue = replaceInstances(
-      coreEventsContent.replace(/ ([a-zA-Z_?]*): \(/g, (string, name) => {
-        return ` ${name.replace('?', '')}: (`;
-      }),
-    );
   };
   const getModulesEventsContent = async () => {
     const eventsFiles = await globby('src/types/modules/*.d.ts');
@@ -86,11 +79,6 @@ export default async function buildTypes() {
           modulesEventsReact += replaceInstances(
             eventsContent.replace(/ ([a-zA-Z]*): \(/g, (string, name) => {
               return ` on${name[0].toUpperCase()}${name.substr(1)}?: (`;
-            }),
-          );
-          modulesEventsVue += replaceInstances(
-            eventsContent.replace(/ ([a-zA-Z_?]*): \(/g, (string, name) => {
-              return ` ${name.replace('?', '')}: (`;
             }),
           );
         }
@@ -123,9 +111,6 @@ export default async function buildTypes() {
       }
       if (file.includes('swiper-react.d.ts')) {
         return processTypingFile(coreEventsReact, modulesEventsReact);
-      }
-      if (file.includes('swiper-vue.d.ts')) {
-        return processTypingFile(coreEventsVue, modulesEventsVue);
       }
       return fs.writeFile(destPath, fileContent);
     }),

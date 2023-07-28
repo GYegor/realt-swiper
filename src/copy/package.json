@@ -121,7 +121,6 @@
     "./element/css/virtual": "./modules/virtual/virtual-element.min.css",
     "./element/css/zoom": "./modules/zoom/zoom-element.min.css",
     "./react": "./react/swiper-react.js",
-    "./vue": "./vue/swiper-vue.js",
     "./types": "./types/index.d.ts",
     "./package.json": "./package.json"
   },
@@ -135,9 +134,6 @@
       ],
       "react": [
         "react/swiper-react.d.ts"
-      ],
-      "vue": [
-        "vue/swiper-vue.d.ts"
       ]
     }
   },
@@ -161,7 +157,6 @@
     "gallery",
     "plugin",
     "react",
-    "vue",
     "slideshow"
   ],
   "author": "Vladimir Kharlampidi",

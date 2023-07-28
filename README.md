@@ -953,12 +953,11 @@ The result is available in `dist/` folder.
 
 ### Running demos:
 
-All demos located in `./playground` folder. There you will find Core (HTML, JS), React, Vue versions.
+All demos located in `./playground` folder. There you will find Core (HTML, JS), React versions.
 To open demo, run:
 
 - **Core**: `npm run core`
 - **React**: `npm run react`
-- **Vue**: `npm run vue`
 
 ### Production Build
 

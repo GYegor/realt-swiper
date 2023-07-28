@@ -9,14 +9,12 @@
     "build:bundle": "node scripts/build --only bundle styles",
     "build:element": "node scripts/build --only element",
     "build:react": "node scripts/build --only react",
-    "build:vue": "node scripts/build --only vue",
     "build:types": "node scripts/build --only types",
     "build:prod": "node scripts/build --prod",
     "build:prod:core": "npm run build:core -- --prod",
     "build:prod:element": "npm run build:element -- --prod",
     "build:prod:bundle": "npm run build:bundle -- --prod",
     "build:prod:react": "npm run build:react -- --prod",
-    "build:prod:vue": "npm run build:vue -- --prod",
     "build:prod:types": "npm run build:types -- --prod",
     "build-icons-font": "python ./scripts/icon-font/generate.py",
     "watch": "node scripts/watch",
@@ -25,7 +23,6 @@
     "core": "npm run build:core && npm run build:bundle && concurrently --kill-others \"vite ./playground/core\" \"npm run watch\" ",
     "element": "npm run build:prod:core && npm run build:prod:bundle && npm run build:element && concurrently --kill-others \"vite ./playground/element\" \"npm run watch -- --prod\" ",
     "react": "npm run build:react && concurrently --kill-others \"vite ./playground/react\" \"npm run watch\"",
-    "vue": "npm run build:vue && concurrently --kill-others \"vite ./playground/vue\" \"npm run watch\"",
     "prettier": "prettier \"**/*.+(js|json|scss|css|less|ts|jsx)\"",
     "format": "npm run prettier -- --write",
     "check-format": "npm run prettier -- --list-different",
@@ -55,7 +52,6 @@
     "carousel",
     "gallery",
     "plugin",
-    "vue",
     "slideshow"
   ],
   "author": "Vladimir Kharlampidi",
@@ -86,7 +82,6 @@
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-replace": "^5.0.2",
     "@types/react": "^18.0.27",
-    "@vitejs/plugin-vue": "^4.0.0",
     "all-contributors-cli": "^6.24.0",
     "autoprefixer": "^10.4.13",
     "chalk": "^5.2.0",
@@ -116,8 +111,7 @@
     "rimraf": "^4.1.2",
     "rollup": "^3.12.0",
     "terser": "^5.16.1",
-    "vite": "^4.0.4",
-    "vue": "^3.2.45"
+    "vite": "^4.0.4"
   },
   "dependencies": {
     "ssr-window": "^4.0.2"

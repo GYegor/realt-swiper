@@ -26,28 +26,28 @@ export interface VirtualMethods {
   /**
    * Append slide. `slides` can be a single slide item or array with such slides.
    *
-   * @note Only for Core version (in React & Vue it should be done by modifying slides array/data/source)
+   * @note Only for Core version (in React it should be done by modifying slides array/data/source)
    */
   appendSlide(slide: HTMLElement | string | HTMLElement[] | string[]): void;
 
   /**
    * Prepend slide. `slides` can be a single slide item or array with such slides.
    *
-   * @note Only for Core version (in React & Vue it should be done by modifying slides array/data/source)
+   * @note Only for Core version (in React it should be done by modifying slides array/data/source)
    */
   prependSlide(slide: HTMLElement | string | HTMLElement[] | string[]): void;
 
   /**
    * Remove specific slide or slides. `slideIndexes` can be a number with slide index to remove or array with indexes.
    *
-   * @note Only for Core version (in React & Vue it should be done by modifying slides array/data/source)
+   * @note Only for Core version (in React it should be done by modifying slides array/data/source)
    */
   removeSlide(slideIndexes: number[]): void;
 
   /**
    * Remove all slides
    *
-   * @note Only for Core version (in React & Vue it should be done by modifying slides array/data/source)
+   * @note Only for Core version (in React it should be done by modifying slides array/data/source)
    */
   removeAllSlides(): void;
 
@@ -116,7 +116,7 @@ export interface VirtualOptions {
    */
   renderSlide?: (slide: any, index: any) => any | null;
   /**
-   * Function for external rendering (e.g. using some other library to handle DOM manipulations and state like React.js or Vue.js). As an argument it accepts `data` object with the following properties:
+   * Function for external rendering (e.g. using some other library to handle DOM manipulations and state like React.js). As an argument it accepts `data` object with the following properties:
    *
    * - `offset` - slides left/top offset in px
    * - `from` - index of first slide required to be rendered
