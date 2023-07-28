@@ -522,7 +522,7 @@ export default function Zoom({ swiper, extendParams, on, emit }) {
       gesture.originY = 0;
     }
     gesture.imageWrapEl.style.transitionDuration = '300ms';
-    gesture.imageWrapEl.style.transform = `translate3d(${translateX}px, ${translateY}px,0)`;
+    gesture.imageWrapEl.style.transform = `translate3d(0,0,0)`;
     gesture.imageEl.style.transitionDuration = '300ms';
     gesture.imageEl.style.transform = `translate3d(0,0,0) scale(${zoom.scale})`;
   }
