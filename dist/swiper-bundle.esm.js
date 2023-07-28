@@ -29,13 +29,10 @@ import Thumbs from './modules/thumbs/thumbs.js';
 import FreeMode from './modules/free-mode/free-mode.js';
 import Grid from './modules/grid/grid.js';
 import Manipulation from './modules/manipulation/manipulation.js';
-import EffectFade from './modules/effect-fade/effect-fade.js';
-import EffectCube from './modules/effect-cube/effect-cube.js';
-import EffectFlip from './modules/effect-flip/effect-flip.js';
 import EffectCoverflow from './modules/effect-coverflow/effect-coverflow.js';
 import EffectCreative from './modules/effect-creative/effect-creative.js';
 import EffectCards from './modules/effect-cards/effect-cards.js';
 
 // Swiper Class
-const modules = [Virtual, Keyboard, Mousewheel, Navigation, Pagination, Scrollbar, Parallax, Zoom, Controller, A11y, History, HashNavigation, Autoplay, Thumbs, FreeMode, Grid, Manipulation, EffectFade, EffectCube, EffectFlip, EffectCoverflow, EffectCreative, EffectCards];
+const modules = [Virtual, Keyboard, Mousewheel, Navigation, Pagination, Scrollbar, Parallax, Zoom, Controller, A11y, History, HashNavigation, Autoplay, Thumbs, FreeMode, Grid, Manipulation, EffectCoverflow, EffectCreative, EffectCards];
 Swiper.use(modules);
