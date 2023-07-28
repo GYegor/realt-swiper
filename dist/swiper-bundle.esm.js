@@ -12,27 +12,12 @@
 
 import Swiper from './core/core.js';
 export { default as Swiper, default } from './core/core.js';
-import Virtual from './modules/virtual/virtual.js';
 import Keyboard from './modules/keyboard/keyboard.js';
-import Mousewheel from './modules/mousewheel/mousewheel.js';
 import Navigation from './modules/navigation/navigation.js';
 import Pagination from './modules/pagination/pagination.js';
-import Scrollbar from './modules/scrollbar/scrollbar.js';
-import Parallax from './modules/parallax/parallax.js';
 import Zoom from './modules/zoom/zoom.js';
-import Controller from './modules/controller/controller.js';
-import A11y from './modules/a11y/a11y.js';
-import History from './modules/history/history.js';
-import HashNavigation from './modules/hash-navigation/hash-navigation.js';
-import Autoplay from './modules/autoplay/autoplay.js';
 import Thumbs from './modules/thumbs/thumbs.js';
-import FreeMode from './modules/free-mode/free-mode.js';
-import Grid from './modules/grid/grid.js';
-import Manipulation from './modules/manipulation/manipulation.js';
-import EffectCoverflow from './modules/effect-coverflow/effect-coverflow.js';
-import EffectCreative from './modules/effect-creative/effect-creative.js';
-import EffectCards from './modules/effect-cards/effect-cards.js';
 
 // Swiper Class
-const modules = [Virtual, Keyboard, Mousewheel, Navigation, Pagination, Scrollbar, Parallax, Zoom, Controller, A11y, History, HashNavigation, Autoplay, Thumbs, FreeMode, Grid, Manipulation, EffectCoverflow, EffectCreative, EffectCards];
+const modules = [Keyboard, Navigation, Pagination, Zoom, Thumbs];
 Swiper.use(modules);
